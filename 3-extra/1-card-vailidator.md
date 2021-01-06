@@ -76,3 +76,4 @@ return false;
 }
 return true;
 };
+console.log(validateCreditCard("9999777788880000))
