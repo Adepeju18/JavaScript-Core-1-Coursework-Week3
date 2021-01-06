@@ -14,7 +14,24 @@ You don't have to worry about making this algorithm work fast! The idea is to ge
 "think" like a computer and practice your knowledge of basic JavaScript.
 */
 
-function sortAges(arr) {}
+function sortAges(arr) {
+  arr.sort((a,b)=> a.age-b.age);
+  //let case1 = a.age;
+  //let case2 = b.age;
+    //if(case1>case2)return 1;
+    //if(case1<case2)return -1;
+    //return 0;
+  }
+
+
+  
+
+  
+
+
+
+  
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

@@ -34,3 +34,45 @@ These are the requirements your project needs to fulfill:
 - Use `node` from the command line to test if your code works as expected.
 
 Good luck!
+
+function validateCreditCard(creditCardNumber){
+if(creditCardNumber.length !==16){
+return false;
+}
+}
+
+<!-- All of the digits must be numbers -->
+
+for(var i = 0;i < creditCardNumber.length;i++){
+if(!Number.isInteger){
+return false;
+}
+}
+
+<!-- credit card number must have at least two different digits -->
+
+var element = {};
+for(var i = 0;i< creditCardNumber.length;i++){
+element[creditCardNumber[i]] = true;
+}
+if(element.length<2){
+return false;
+}
+
+<!-- final digit of credit card must be even -->
+
+if(creditCardNumber[creditCardNumber.length - 1]% 2 !==0){  
+ return false;
+}
+
+<!-- The sum of all the digits must be greater than 16 -->
+
+var = 0;
+for(var i =0;i <creditCardNumber.length;i++){
+sum +=Number(creditCardNumber[i]);
+}
+if(sum <= 16){
+return false;
+}
+return true;
+};

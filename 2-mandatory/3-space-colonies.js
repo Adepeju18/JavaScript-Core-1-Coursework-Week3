@@ -15,7 +15,9 @@
   
 */
 
-function colonisers() {}
+function colonisers(name) {
+  return name.filter(element =>element.startsWith("A") && element.endsWith("family"));
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -33,7 +35,7 @@ const voyagers = [
   "Avery family",
   "Archer family",
 ];
-
+console.log(colonisers(voyagers));
 const util = require("util");
 
 function test(test_name, actual, expected) {

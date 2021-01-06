@@ -23,8 +23,20 @@ PasswordValidationResult=  [false, false, false, false, true]
 */
 
 function validatePasswords(passwords) {
-
+  var lettersNumbersAndSpecialCharacters =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{5,}$/
+  return passwords.map((element,index) => !!element.match(lettersNumbersAndSpecialCharacters)&&
+  passwords.indexOf(element)===index);
 }
+      
+    
+  
+      
+    
+  
+  
+  
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
