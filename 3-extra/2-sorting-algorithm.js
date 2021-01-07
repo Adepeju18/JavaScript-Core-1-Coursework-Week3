@@ -15,13 +15,24 @@ You don't have to worry about making this algorithm work fast! The idea is to ge
 */
 
 function sortAges(arr) {
-  arr.sort((a,b)=> a.age-b.age);
-  //let case1 = a.age;
-  //let case2 = b.age;
-    //if(case1>case2)return 1;
-    //if(case1<case2)return -1;
-    //return 0;
+  let newArr = [];
+  for(let i=0; i <arr.length; i++){
+    if(typeof arr[i]=== "number"){
+      newArr.push(arr[i]);
+    }
+    for(let i =0; i<newArr.length;i++){
+    for(let j=0;j<newArr.length; j++){
+      let tmp = newArr[j];
+      if(newArr[j] > newArr[j + 1]){
+        newArr[j] = newArr[j + 1];
+        newArr[j + 1] =tmp;
+      }
+    }
   }
+}
+    return newArr;
+
+  };
 
 
   
